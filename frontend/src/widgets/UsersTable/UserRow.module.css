@@ -1,0 +1,46 @@
+.userInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userName {
+  font-weight: 700;
+  color: #1a3e35;
+}
+
+.blockedRow {
+  background: #fef7f0;
+}
+
+.blockedName {
+  color: #9b8a7a;
+  text-decoration: line-through;
+  font-weight: 700;
+}
+
+.rolesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.1s;
+  color: #8fb2a4;
+}
+
+.actions i:hover {
+  color: #1f7a63;
+  transform: scale(1.05);
+}

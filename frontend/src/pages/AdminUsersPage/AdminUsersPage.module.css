@@ -1,0 +1,81 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  background: #f5f9f8;
+}
+
+.content {
+  margin-left: 280px;
+  padding: 32px 40px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.titleSection h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(145deg, #1a3e35, #1f7a63);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 6px;
+}
+
+.titleSection small {
+  font-size: 0.85rem;
+  color: #6d8f82;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchFilterRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Стили для глобальных элементов */
+:global(.bg-glow) {
+  position: fixed;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(31,122,99,0.03) 0%, rgba(31,122,99,0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+:global(.bg-dot-pattern) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.25;
+  background-image: radial-gradient(#bfdbd2 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 24px;
+  }
+  
+  .searchFilterRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

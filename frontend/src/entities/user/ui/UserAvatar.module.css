@@ -1,0 +1,17 @@
+.avatar {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #e2f0ec, #d1e6e0);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f7a63;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .avatar.blocked {
+    background: linear-gradient(135deg, #f0e6df, #e6dad1);
+    color: #b89a7a;
+  }

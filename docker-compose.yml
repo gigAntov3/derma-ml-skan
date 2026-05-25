@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:16
+    container_name: postgres-db
+    environment:
+      - POSTGRES_DB=derma_ml_db
+      - POSTGRES_USER=derma_user
+      - POSTGRES_PASSWORD=strong_password_123
+      - DB_NAME=derma_ml_db
+      - DB_USER=derma_user
+      - DB_PASSWORD=strong_password_123
+    ports:
+      - "5433:5432"  # Для прямого доступа к БД (опционально)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  backend:
+    build: ./backend
+    container_name: derma-ml-skan-backend-1
+    expose:
+      - "8000"  # Только внутренний доступ, не публикуем наружу
+    environment:
+      - DATABASE_URL=postgresql://derma_user:strong_password_123@postgres-db:5432/derma_ml_db
+    depends_on:
+      - postgres-db
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    container_name: derma-ml-skan-frontend-1
+    expose:
+      - "4173"  # Только внутренний доступ
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"  # Основной порт для сайта
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro  # Монтируем конфиг
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

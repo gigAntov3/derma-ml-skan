@@ -1,0 +1,21 @@
+@import './reset.css';
+@import './variables.css';
+
+body {
+  background: linear-gradient(145deg, var(--color-bg) 0%, var(--color-bg-dark) 100%);
+  color: var(--color-text);
+}
+
+/* Убираем центрирование для админ-панели */
+#root {
+  min-height: 100vh;
+}
+
+/* Эти стили только для страниц авторизации */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}

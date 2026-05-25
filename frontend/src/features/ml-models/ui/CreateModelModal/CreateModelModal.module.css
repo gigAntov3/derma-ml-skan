@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .fieldGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #5f8b7c;
+    margin-bottom: 8px;
+  }
+  
+  .select {
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1.5px solid #e2ece8;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .select:focus {
+    border-color: #1f7a63;
+    box-shadow: 0 0 0 3px rgba(31, 122, 99, 0.08);
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .fileLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 32px 20px;
+    border: 2px dashed #d0e0da;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: white;
+    color: #8aa79b;
+    text-align: center;
+  }
+  
+  .fileLabel:hover {
+    border-color: #1f7a63;
+    color: #1f7a63;
+    background: #f0f7fa;
+  }
+  
+  .fileInfo {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #eef5f2;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+  
+  .hint {
+    margin-top: 6px;
+    font-size: 0.7rem;
+    color: #8aa79b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 8px;
+    padding-top: 20px;
+    border-top: 1px solid #eef5f2;
+  }
+  
+  .error {
+    color: #e0745f;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 8px;
+    background: #fee8e0;
+    border-radius: 12px;
+  }
+
+/* Добавьте эти стили */
+.fileSize {
+  color: #8aa79b;
+  font-size: 0.7rem;
+  margin-left: 8px;
+}
+
+.clearFile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0745f;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  margin-left: auto;
+}
+
+.clearFile:hover {
+  background: #fee8e0;
+}
+
+.architectureInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: #f0f7fa;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: #1f7a63;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #eef5f2;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #f0f7fa;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    color: #5b7f8c;
+    margin: 0;
+  }
+  
+  .description i {
+    font-size: 1.1rem;
+    color: #1f7a63;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 8px;
+  }

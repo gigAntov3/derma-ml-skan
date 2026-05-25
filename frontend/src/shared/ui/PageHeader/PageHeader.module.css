@@ -1,0 +1,52 @@
+.header {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.titleSection h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(145deg, #1a3e35, #1f7a63);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleSection small {
+  font-size: 0.85rem;
+  color: #6d8f82;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .actions {
+    width: 100%;
+  }
+  
+  .actions button {
+    width: 100%;
+  }
+}

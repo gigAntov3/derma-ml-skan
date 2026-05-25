@@ -1,0 +1,138 @@
+.card {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(203, 213, 225, 0.4);
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6c8b7e;
+  padding: 18px 20px 12px 24px;
+  background: #fefefe;
+  border-bottom: 1px solid #edf2f0;
+  white-space: nowrap;
+}
+
+/* Заголовки - центрируем все кроме первой и третьей колонки */
+.table th:nth-child(1) {
+  text-align: left;
+}
+
+.table th:nth-child(2) {
+  text-align: center;
+}
+
+.table th:nth-child(3) {
+  text-align: left;
+}
+
+.table th:nth-child(4) {
+  text-align: center;
+}
+
+.table th:nth-child(5) {
+  text-align: center;
+}
+
+.table th:nth-child(6) {
+  text-align: center;
+}
+
+/* Ячейки */
+.table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+}
+
+/* Выравнивание ячеек */
+.table td:nth-child(1) {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.table td:nth-child(2) {
+  text-align: center;
+}
+
+.table td:nth-child(3) {
+  text-align: left;
+}
+
+.table td:nth-child(4) {
+  text-align: center;
+}
+
+.table td:nth-child(5) {
+  text-align: center;
+}
+
+.table td:nth-child(6) {
+  text-align: center;
+  padding-right: 24px;
+}
+
+/* Стили для пустого состояния */
+.emptyRow td {
+  padding: 0 !important;
+  text-align: center;
+  background: #fafdfc;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.emptyState i {
+  font-size: 3.5rem;
+  color: #c8ddd4;
+  margin-bottom: 8px;
+}
+
+.emptyState p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6d8f82;
+  margin: 0;
+}
+
+.emptyState span {
+  font-size: 0.85rem;
+  color: #9bb7ab;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .emptyState {
+    padding: 40px 20px;
+  }
+  
+  .emptyState i {
+    font-size: 2.5rem;
+  }
+  
+  .emptyState p {
+    font-size: 1rem;
+  }
+  
+  .emptyState span {
+    font-size: 0.75rem;
+  }
+}

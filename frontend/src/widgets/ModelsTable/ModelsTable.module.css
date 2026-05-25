@@ -1,0 +1,172 @@
+.card {
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(203, 213, 225, 0.4);
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+  
+  .table th {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6c8b7e;
+    padding: 18px 20px 12px 24px;
+    background: #fefefe;
+    border-bottom: 1px solid #edf2f0;
+    white-space: nowrap;
+    text-align: left;
+  }
+  
+  .table td {
+    padding: 16px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f5f3;
+  }
+  
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .emptyRow td {
+    padding: 0 !important;
+    text-align: center;
+    background: #fafdfc;
+  }
+  
+  .emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .emptyState i {
+    font-size: 3.5rem;
+    color: #c8ddd4;
+  }
+  
+  .emptyState p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6d8f82;
+    margin: 0;
+  }
+  
+  .emptyState span {
+    font-size: 0.85rem;
+    color: #9bb7ab;
+  }
+  
+  .statusBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 40px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: fit-content;
+  }
+  
+  .statusActive {
+    background: #e0f0ec;
+    color: #1f7a63;
+  }
+  
+  .statusInactive {
+    background: #f0f5f3;
+    color: #8aa79b;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .actionBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #8aa79b;
+    background: transparent;
+    border: none;
+  }
+  
+  .actionBtn:hover {
+    background: #f0f7f4;
+    color: #1f7a63;
+    transform: scale(1.05);
+  }
+  
+  .activateBtn {
+    color: #1f7a63;
+  }
+  
+  .activateBtn:hover {
+    background: #e0f0ec;
+  }
+  
+  .downloadBtn:hover {
+    color: #2c9e82;
+  }
+  
+  .deleteBtn {
+    color: #e0745f;
+  }
+  
+  .deleteBtn:hover {
+    background: #fee8e0;
+    color: #e0745f;
+  }
+  
+  .fileSize {
+    font-size: 0.8rem;
+    color: #6d8f82;
+  }
+  
+  .architecture {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: #f0f7fa;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #1f7a63;
+  }
+
+.versionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .versionNumber {
+    font-weight: 600;
+    color: #1f7a63;
+    font-size: 0.85rem;
+  }
+  
+  .versionDate {
+    font-size: 0.65rem;
+    color: #8aa79b;
+  }

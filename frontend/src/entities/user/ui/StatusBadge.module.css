@@ -1,0 +1,22 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.badge.active {
+  background: #e0f0ec;
+  color: #1f7a63;
+}
+
+.badge.blocked {
+  background: #fee8e0;
+  color: #c45a3a;
+}

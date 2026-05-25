@@ -1,0 +1,26 @@
+.features {
+    position: relative;
+    z-index: 2;
+    margin-top: 48px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    color: white;
+  }
+  
+  .item i {
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 14px;
+  }
+  
+  .item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.95;
+  }

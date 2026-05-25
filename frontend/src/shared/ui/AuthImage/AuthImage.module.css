@@ -1,0 +1,19 @@
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #f5f9f8;
+    border-radius: 12px;
+    min-height: 150px;
+    color: #8aa79b;
+  }
+  
+  .placeholder i {
+    font-size: 2rem;
+  }
+  
+  .error {
+    color: #e0745f;
+  }

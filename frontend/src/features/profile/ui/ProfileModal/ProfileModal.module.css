@@ -1,0 +1,116 @@
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Блок с ФИО */
+  .fullnameBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .fullnameBlock > div {
+    width: 100%;
+  }
+  
+  /* Две колонки */
+  .twoColumns {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Поле ввода с меткой */
+  .fieldGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #5f8b7c;
+    margin-bottom: 6px;
+  }
+  
+  .label i {
+    font-size: 0.85rem;
+    color: #8aa79b;
+  }
+  
+  .input,
+  .select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1.5px solid #e0e9e5;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    background: white;
+    outline: none;
+  }
+  
+  .input:focus,
+  .select:focus {
+    border-color: #1f7a63;
+    box-shadow: 0 0 0 3px rgba(31, 122, 99, 0.08);
+  }
+  
+  .input:disabled,
+  .input[readonly] {
+    background-color: #f8faf9;
+    cursor: default;
+    color: #6f8b7e;
+    border-color: #e2ece7;
+  }
+  
+  .hint {
+    font-size: 0.6rem;
+    color: #a5c0b5;
+    margin-top: 4px;
+  }
+  
+  /* Кнопки */
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 8px;
+    height: 40px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 640px) {
+    .twoColumns {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .column {
+      width: 100%;
+    }
+  }
+
+.hint {
+  font-size: 0.65rem;
+  color: #8aa79b;
+  margin-top: 4px;
+}

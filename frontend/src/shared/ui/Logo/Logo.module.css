@@ -1,0 +1,38 @@
+.logo {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon i {
+    font-size: 32px;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 260px;
+  }

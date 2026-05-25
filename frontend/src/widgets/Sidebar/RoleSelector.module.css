@@ -1,0 +1,118 @@
+.selector {
+    margin-bottom: 32px;
+    position: relative;
+  }
+  
+  .selectedCard {
+    background: linear-gradient(135deg, #1f7a63 0%, #2a8c72 100%);
+    border-radius: 20px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 14px rgba(31, 122, 99, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .selectedCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(31, 122, 99, 0.3);
+  }
+  
+  .selectedInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .selectedInfo i {
+    font-size: 1.4rem;
+    color: white;
+  }
+  
+  .selectedInfo span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .expandIcon {
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .expanded .expandIcon {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1001;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f0f5f3;
+  }
+  
+  .option:last-child {
+    border-bottom: none;
+  }
+  
+  .option:hover {
+    background: #f6fbf9;
+    transform: translateX(4px);
+  }
+  
+  .option i:first-child {
+    font-size: 1.3rem;
+    width: 32px;
+    color: #7f9b8e;
+  }
+  
+  .optionText {
+    font-weight: 500;
+    color: #2c4a3e;
+    flex: 1;
+  }
+  
+  .option.active {
+    background: #eef5f2;
+  }
+  
+  .option.active i:first-child {
+    color: #1f7a63;
+  }
+  
+  .option .bi-check-lg {
+    color: #1f7a63;
+    opacity: 0;
+  }
+  
+  .option.active .bi-check-lg {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }

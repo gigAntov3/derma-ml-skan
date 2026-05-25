@@ -1,0 +1,31 @@
+.badge {
+  padding: 5px 12px;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.badge.admin {
+  background: #e8eef9;
+  color: #2c5f8a;
+}
+
+.badge.doctor {
+  background: #e0f0ec;
+  color: #1f7a63;
+}
+
+.badge.patient {
+  background: #f3f0e5;
+  color: #b68b40;
+}
+
+.badge.dev {
+  background: #eceaff;
+  color: #6b4e9e;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border-radius: 48px;
+    padding: 0 20px 0 20px;
+    border: 1px solid rgba(31, 122, 99, 0.2);
+    height: 52px;
+  }
+  
+  .wrapper i {
+    color: #8aa79b;
+    font-size: 1.1rem;
+  }
+  
+  .select {
+    border: none;
+    background: transparent;
+    padding: 0 8px 0 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2c5a4c;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+  }
