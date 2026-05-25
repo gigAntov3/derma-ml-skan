@@ -58,27 +58,10 @@
 ---
 
 ## 📸 Интерфейс приложения
-
-<details open>
-<summary>🔐 Авторизация</summary>
-
 <img src="screenshots/login.png">
-
-</details>
-
-<details>
-<summary>🩺 Анализ изображения</summary>
-
 <img src="screenshots/analysis.png">
-
-</details>
-
-<details>
-<summary>🧠 ML Models</summary>
-
 <img src="screenshots/ml_models.png">
-
-</details>
+<img src="screenshots/prediction.png">
 
 ---
 
