@@ -4,8 +4,6 @@
 
 Система предназначена как для исследовательских задач в области Medical AI, так и для практического применения в качестве инструмента поддержки врача.
 
----
-
 # 🚀 Основные возможности
 
 <div align="center">
@@ -19,15 +17,11 @@
 
 </div>
 
----
-
 ## 📸 Интерфейс приложения
 <img src="screenshots/login.png">
 <img src="screenshots/analysis.png">
 <img src="screenshots/prediction.png">
 <img src="screenshots/ml_models.png">
-
----
 
 # 🛠️ Технологический стек
 
@@ -41,8 +35,6 @@
 | JWT Auth    | Grad-CAM           | Responsive UI | Nginx          |
 
 </div>
-
----
 
 # ⚙️ Быстрый старт
 
@@ -66,14 +58,10 @@ docker exec -it postgres-db psql -U derma_user -d derma_ml_db \
 -c "INSERT INTO user_roles (user_id, role_id) VALUES (1, 4);"
 ```
 
----
-
 # 🌐 Доступ к сервисам
 
 | Сервис            | URL                         |
 | ----------------- | --------------------------- |
 | 🖥️ Веб-интерфейс | `http://localhost`          |
 | 📘 Swagger API    | `http://localhost/api/docs` |
-| ❤️ Health Check   | `http://localhost/health`   |
-
----
+| ❤️ Health Check   | `http://localhost/api/health`   |
