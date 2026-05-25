@@ -1,38 +1,6 @@
 # 🩺 DermaSkan
 
-<div align="center">
-
-### Интеллектуальная система анализа кожных новообразований
-
-#### Гибридная AI-архитектура на базе Vision Transformer + CNN
-
-<p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white">
-  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white">
-</p>
-
-<p align="center">
-  <b>AI-платформа для поддержки диагностики в дерматологии</b><br>
-  Анализ изображений • Grad-CAM визуализация • ViT + CNN • FastAPI
-</p>
-
-</div>
-
----
-
-# ✨ О проекте
-
 **DermaSkan** — это интеллектуальная система поддержки принятия врачебных решений в области дерматологии, использующая современные методы компьютерного зрения и глубокого обучения для анализа кожных новообразований.
-
-Проект сочетает:
-
-* 🧠 **Vision Transformer (ViT)** для глобального анализа изображения
-* 🔬 **CNN-архитектуры** для извлечения локальных признаков
-* 🌡️ **Grad-CAM визуализацию** для интерпретации решений модели
-* ⚡ **FastAPI backend** для высокопроизводительного inference API
 
 Система предназначена как для исследовательских задач в области Medical AI, так и для практического применения в качестве инструмента поддержки врача.
 
@@ -47,10 +15,6 @@
 | 🔍 **Бинарная классификация**        | Определение: злокачественное / доброкачественное         |
 | 🧬 **Мультиклассовая классификация** | Меланома • Невус • Кератоз • Basal Cell Carcinoma        |
 | 🌡️ **Grad-CAM визуализация**        | Подсветка областей изображения, влияющих на предсказание |
-| 📊 **Интерпретируемый AI**           | Повышение прозрачности работы модели                     |
-| ⚡ **Быстрый inference**              | Анализ изображения менее чем за 10 секунд                |
-| 🐳 **Docker-ready**                  | Полная контейнеризация проекта                           |
-| 📘 **REST API**                      | Интеграция с внешними сервисами                          |
 | 🔐 **Система ролей**                 | Поддержка пользователей и прав доступа                   |
 
 </div>
@@ -60,8 +24,8 @@
 ## 📸 Интерфейс приложения
 <img src="screenshots/login.png">
 <img src="screenshots/analysis.png">
-<img src="screenshots/ml_models.png">
 <img src="screenshots/prediction.png">
+<img src="screenshots/ml_models.png">
 
 ---
 
@@ -81,18 +45,6 @@
 ---
 
 # ⚙️ Быстрый старт
-
-## 📋 Требования
-
-Перед запуском убедитесь, что установлены:
-
-* Docker
-* Docker Compose
-* Git
-
----
-
-## 🔧 Установка
 
 ### 1️⃣ Клонирование репозитория
 
@@ -123,36 +75,5 @@ docker exec -it postgres-db psql -U derma_user -d derma_ml_db \
 | 🖥️ Веб-интерфейс | `http://localhost`          |
 | 📘 Swagger API    | `http://localhost/api/docs` |
 | ❤️ Health Check   | `http://localhost/health`   |
-
----
-
-# 🧠 ML-возможности
-
-## Поддерживаемые задачи
-
-### 🔍 Binary Classification
-
-* Злокачественное / доброкачественное образование
-* Меланома / не меланома
-
-### 🧬 Multi-class Classification
-
-* Melanoma
-* Nevus
-* Keratosis
-* Basal Cell Carcinoma (BCC)
-
----
-
-# 🌡️ Explainable AI
-
-Проект использует **Grad-CAM** для визуализации внимания модели.
-
-Это позволяет:
-
-* интерпретировать предсказания нейросети;
-* выделять области изображения, влияющие на результат;
-* повышать доверие к AI-системе;
-* помогать врачам в принятии решений.
 
 ---
